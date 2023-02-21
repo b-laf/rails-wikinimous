@@ -1,13 +1,12 @@
-<div>
-  <h2>Wikiminous</h2>
-  <%= link_to "New article", new_article_path %>
-</div>
-
 <div class="container">
-  <% @articles.each do |article| %>
-    <%= link_to article_path(article) do %>
-      <%= article.title %>
-    <% end %>
-    <p><%= article.content %></p>
-  <% end %>
+  <div class="row justify-content-center mt-3">
+    <div class="col-12 col-md-10 col-lg-6">
+      <% @articles.each do |article| %>
+        <%= link_to article_path(article), class:"text-decoration-none" do %>
+          <%= article.title %>
+        <% end %>
+        <p><%= article.content %></p>
+      <% end %>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,26 @@
+
+* {
+  font-family: 'Quicksand', sans-serif;
+ }
+
+a {
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+h1, i {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+h1 {
+  color:  grey;
+  font-weight: bold;
+}

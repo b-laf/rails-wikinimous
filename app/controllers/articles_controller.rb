@@ -18,15 +18,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    
-  end
-
-  def show
-
   end
 
   def update
-
+    @article.update(article_params)
+    redirect_to article_path(@article)
   end
 
   def destroy
